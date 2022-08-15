@@ -18,8 +18,8 @@ function Introduce() {
         marginLeft:"330px",
         marginRight:"330px",
       }}>
-        <h1 style={{fontFamily:"SUIT-Bold", fontSize: "40px", color: "#4D5D97"}}>ABOUT, US</h1>
-        <h5 style = {{fontFamily:"SUIT-Regular"}}>Global IT Leader를 양성하는 인하대학교 정보통신공학과</h5>        
+        <h1 style={{fontSize: "40px", color: "#4D5D97"}}>ABOUT, US</h1>
+        <h5 >Global IT Leader를 양성하는 인하대학교 정보통신공학과</h5>        
       </div>
 
       <div className="container">
