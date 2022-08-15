@@ -21,20 +21,29 @@ function Main() {
   const aboutRef = useRef(null);
   const featureRef = useRef(null);
   const gatheringRef = useRef(null);
+  const homeRef = useRef(null);
 
+  const [home, setHome] = useState();
   const [about, setAbout] = useState();
   const [feature, setfeature] = useState();
   const [gathering, setGathering] = useState();
 
   useEffect(() => {
+    setHome(homeRef);
     setAbout(aboutRef);
     setfeature(featureRef);
     setGathering(gatheringRef);
   }, []);
   return (
     <>
-      <Header about={about} feature={feature} gathering={gathering} />
+      <Header
+        home={home}
+        about={about}
+        feature={feature}
+        gathering={gathering}
+      />
       <Style.Wrapper>
+        <div ref={homeRef}></div>
         <Banner />
         <div ref={aboutRef}></div>
         <About />

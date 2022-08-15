@@ -21,6 +21,7 @@ const Style = {
     justify-content: center;
     color: white;
     margin-left: 60px;
+    cursor: pointer;
   `,
   NavWrapper: styled.div`
     width: fit-content;
@@ -39,7 +40,14 @@ const Style = {
   `,
 };
 
-const Header = ({ about, feature, gathering }) => {
+const Header = ({ home, about, feature, gathering }) => {
+  const homeOnClick = () => {
+    if (home !== undefined && home.current !== null)
+      home.current.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+      });
+  };
   const aboutOnClick = () => {
     if (about !== undefined && about.current !== null)
       about.current.scrollIntoView({
@@ -63,13 +71,25 @@ const Header = ({ about, feature, gathering }) => {
   };
   return (
     <Style.Wrapper>
-      <Style.Logo>로고</Style.Logo>
+      <Style.Logo
+        onClick={() => {
+          window.location.href = "/";
+        }}
+      >
+        로고
+      </Style.Logo>
       <Style.NavWrapper>
-        <Style.NavItem>HOME</Style.NavItem>
+        <Style.NavItem onClick={homeOnClick}>HOME</Style.NavItem>
         <Style.NavItem onClick={aboutOnClick}>ABOUT</Style.NavItem>
         <Style.NavItem onClick={featureOnClick}>FEATURES</Style.NavItem>
         <Style.NavItem onClick={gatheringOnClick}>GATHERING</Style.NavItem>
-        <Style.NavItem>FORUM</Style.NavItem>
+        <Style.NavItem
+          onClick={() => {
+            window.location.href = "/forum";
+          }}
+        >
+          FORUM
+        </Style.NavItem>
       </Style.NavWrapper>
     </Style.Wrapper>
   );
