@@ -7,7 +7,7 @@ import Gathering from "../components/Gathering";
 const Style = {
   Wrapper: styled.div`
     width: 100vw;
-    height: 300vh;
+    height: fit-content;
     ::-webkit-scrollbar {
       display: none;
     }
