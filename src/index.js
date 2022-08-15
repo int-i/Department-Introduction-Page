@@ -6,7 +6,6 @@ import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import Forum from "./page/Forum";
 import Main from "./page/Main";
-import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const Style = {
@@ -31,4 +30,3 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
-reportWebVitals();
