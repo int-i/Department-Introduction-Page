@@ -6,7 +6,7 @@ const Style = {
     height: 80px;
     display: flex;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.8);
