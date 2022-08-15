@@ -9,4 +9,5 @@ const Style = {
 const AfterGraduate = () => {
   return <Style.Wrapper>AfterGraduate</Style.Wrapper>;
 };
+
 export default AfterGraduate;

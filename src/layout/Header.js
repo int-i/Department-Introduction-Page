@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
 const Style = {
@@ -21,6 +22,7 @@ const Style = {
     justify-content: center;
     color: white;
     margin-left: 60px;
+    cursor: pointer;
   `,
   NavWrapper: styled.div`
     width: fit-content;
@@ -35,19 +37,63 @@ const Style = {
     color: black;
     font-weight: bold;
     font-size: 20px;
+    cursor: pointer;
   `,
 };
 
-const Header = () => {
+const Header = ({ home, about, feature, gathering }) => {
+  const [windowHeight, setWindowHeight] = useState();
+
+  const homeOnClick = () => {
+    if (home !== undefined && home.current !== null)
+      home.current.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+      });
+  };
+  const aboutOnClick = () => {
+    if (about !== undefined && about.current !== null)
+      about.current.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+      });
+  };
+  const featureOnClick = () => {
+    if (feature !== undefined && feature.current !== null)
+      feature.current.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+      });
+  };
+  const gatheringOnClick = () => {
+    if (gathering !== undefined && gathering.current !== null)
+      gathering.current.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+      });
+  };
+  console.log(windowHeight);
   return (
     <Style.Wrapper>
-      <Style.Logo>로고</Style.Logo>
+      <Style.Logo
+        onClick={() => {
+          window.location.href = "/";
+        }}
+      >
+        로고
+      </Style.Logo>
       <Style.NavWrapper>
-        <Style.NavItem>HOME</Style.NavItem>
-        <Style.NavItem>ABOUT</Style.NavItem>
-        <Style.NavItem>FEATURES</Style.NavItem>
-        <Style.NavItem>GATHERING</Style.NavItem>
-        <Style.NavItem>FORUM</Style.NavItem>
+        <Style.NavItem onClick={homeOnClick}>HOME</Style.NavItem>
+        <Style.NavItem onClick={aboutOnClick}>ABOUT</Style.NavItem>
+        <Style.NavItem onClick={featureOnClick}>FEATURES</Style.NavItem>
+        <Style.NavItem onClick={gatheringOnClick}>GATHERING</Style.NavItem>
+        <Style.NavItem
+          onClick={() => {
+            window.location.href = "/forum";
+          }}
+        >
+          FORUM
+        </Style.NavItem>
       </Style.NavWrapper>
     </Style.Wrapper>
   );
