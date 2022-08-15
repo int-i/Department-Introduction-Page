@@ -22,7 +22,6 @@ const About = () => {
       <Introduce />
       <Talent />
       <EducationGoal />
-      <AfterGraduate />
     </Style.Wrapper>
   );
 };
