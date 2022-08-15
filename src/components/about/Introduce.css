@@ -1,29 +1,28 @@
-.parent{
+.parent {
   width: 90%;
   margin: 10px auto;
   display: flex;
 }
 
 .first {
-  flex:1;
+  flex: 1;
   box-sizing: border-box;
   vertical-align: middle;
 }
 
-.second{
-  display:flex;
+.second {
+  display: flex;
   flex-direction: column;
-  flex:1;
+  flex: 1;
   box-sizing: border-box;
   vertical-align: bottom;
-  text-align: center;  
+  text-align: center;
   align-items: center;
   justify-content: center;
-
 }
 
-.third{
-  flex:1;
+.third {
+  flex: 1;
   box-sizing: border-box;
   vertical-align: middle;
   text-align: right;
@@ -35,11 +34,9 @@
   line-height: 1.5;
 }
 
-.container{
+.container {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-  margin-left: 330px;
-  margin-right: 330px;
 }
 
 .TextBox2 {

@@ -8,7 +8,7 @@ import Talent from "./about/Talent";
 const Style = {
   Wrapper: styled.div`
     width: 100vw;
-    height: 400vh;
+    height: 300vh;
   `,
 };
 const About = () => {
