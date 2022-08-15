@@ -21,12 +21,10 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Style.Wrapper>
-        <Header />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/forum" element={<Forum />} />
         </Routes>
-        <Footer />
       </Style.Wrapper>
     </BrowserRouter>
   </React.StrictMode>

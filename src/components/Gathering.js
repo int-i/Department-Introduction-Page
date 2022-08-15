@@ -5,6 +5,7 @@ const Style = {
     width: 100vw;
     height: 100vh;
   `,
+  GatheringImage: styled.img``,
 };
 const Gathering = () => {
   return <Style.Wrapper>Gathreing</Style.Wrapper>;
