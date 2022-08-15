@@ -20,4 +20,5 @@ npm start
 pull 할 때마다 아래 코드를 실행시켜주세요!
 ```bash
 git pull
+npm install
 ```
