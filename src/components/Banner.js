@@ -12,9 +12,10 @@ const Style = {
   BannerImage: styled.img`
     width: 100vw;
     height: 100vh;
+    filter: brightness(50%);
   `,
   Title: styled.span`
-    font-size: 30px;
+    font-size: 24px;
     color: white;
     z-index: 2;
     position: absolute;
@@ -26,6 +27,8 @@ const Style = {
     font-weight: bolder;
     z-index: 2;
     position: absolute;
+    top: 38vh;
+    text-align: center;
   `,
 };
 
@@ -33,7 +36,10 @@ const Banner = () => {
   return (
     <Style.Wrapper>
       <Style.Title>정보통신 공학과</Style.Title>
-      <Style.SubTitle></Style.SubTitle>
+      <Style.SubTitle>
+        글로벌 IT 리더를 양성하고 <br />
+        세계를 잇다
+      </Style.SubTitle>
       <Style.BannerImage src="/mainBanner.jpg" />
     </Style.Wrapper>
   );
