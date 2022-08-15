@@ -12,7 +12,7 @@ const Style = {
     height: 100%;
   `,
   GatheringContainer: styled.div`
-    width: 80vw;
+    width: 85vw;
     height: 100vh;
     padding-top: 80px;
   `,
@@ -33,7 +33,7 @@ const Style = {
   `,
   ImageTitle: styled.h3`
     font-size: 25px;
-    font-weight: normal;
+    font-weight: bolder;
     color: #899af8;
     margin: 0;
     padding: 0;
