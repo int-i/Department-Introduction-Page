@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
 const Style = {
@@ -41,6 +42,8 @@ const Style = {
 };
 
 const Header = ({ home, about, feature, gathering }) => {
+  const [windowHeight, setWindowHeight] = useState();
+
   const homeOnClick = () => {
     if (home !== undefined && home.current !== null)
       home.current.scrollIntoView({
@@ -69,6 +72,7 @@ const Header = ({ home, about, feature, gathering }) => {
         behavior: "smooth",
       });
   };
+  console.log(windowHeight);
   return (
     <Style.Wrapper>
       <Style.Logo
