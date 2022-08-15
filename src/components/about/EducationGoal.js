@@ -18,8 +18,8 @@ const EducationGoal = () => {
     <Style.Wrapper>
       <div className="container">
 
-        <div >
-          <h2 className="TextBox">교육 목표</h2>
+        <div className="TextBox">
+          교육 목표
         </div>
         <div className="contents">
           <div className="first">
@@ -63,8 +63,8 @@ const EducationGoal = () => {
             </div>
           </div>
         </div>
-        <div>
-          <h2 className="TextBox2">©Department of Information and Communication Engineering Educational Goals</h2>
+        <div className="TextBox2">
+          ©Department of Information and Communication Engineering Educational Goals
         </div>
       </div>
     </Style.Wrapper>
