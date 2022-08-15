@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+@font-face {
+  font-family : "SUIT-Regular";
+  src: url("./components/fonts/SUIT-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SUIT-Bold";
+  src: url("./components/fonts/SUIT-Bold.ttf");
+}
